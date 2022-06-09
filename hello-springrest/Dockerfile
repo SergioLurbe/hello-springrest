@@ -1,0 +1,4 @@
+FROM openjdk:11.0-jre-slim-buster 
+WORKDIR opt/springrest
+COPY build/libs/springrest-0.0.1-SNAPSHOT.jar .
+CMD java -jar springrest-0.0.1-SNAPSHOT.jar
